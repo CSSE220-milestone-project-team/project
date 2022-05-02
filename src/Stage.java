@@ -42,6 +42,6 @@ public class Stage {
     public void drawOn(Graphics2D g2){
         Random r = new Random();
         g2.setColor(Color.black);
-        g2.fillRect(this.x, this.y, r.nextInt(100,150), 15);
+        g2.fillRect(this.x, this.y, r.nextInt(100,150), 10);
     }
 }
