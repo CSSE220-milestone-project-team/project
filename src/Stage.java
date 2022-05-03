@@ -10,6 +10,7 @@ public class Stage {
 
     public  Stage(int k){
         Random r = new Random();
+        System.out.println("in stage");
         //stage in range 1:
         if(k == 1){
             this.x = r.nextInt(50, 100);
