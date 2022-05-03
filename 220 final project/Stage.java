@@ -7,7 +7,7 @@ public class Stage {
     private int length;
     private int thickness;
 
-    public  Stage(int k){
+    public Stage(int k) {
         
 
     }
