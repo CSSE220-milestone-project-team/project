@@ -5,6 +5,7 @@ import java.awt.*;
 
 public class Viewer extends JFrame {
 
+
     public static void main(String[] args) {
         new Viewer();
     }
