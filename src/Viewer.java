@@ -6,6 +6,7 @@ import java.awt.Color;
 
 public class Viewer extends JFrame {
 
+
     public static void main(String[] args) {
         new Viewer();
     }
