@@ -13,7 +13,7 @@ public class Component extends JComponent {
         for(int k = 0; k < 5; k ++){
             this.stage.add(new Stage(k));
         }
-        System.out.println(this.stage);  //status check
+
 
 
     }

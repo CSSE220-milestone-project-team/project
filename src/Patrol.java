@@ -19,8 +19,4 @@ public class Patrol extends Enemy {
             enemy.moveRight(positionX,moveSpeed);
     }
 
-
-
-
-
 }

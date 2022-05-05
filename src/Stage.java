@@ -33,7 +33,7 @@ public class Stage {
             this.y = r.nextInt(150,200);
         }
 
-        else{
+        else {
             this.x = r.nextInt(50, 100);
             this.y = r.nextInt(100,150);
         }

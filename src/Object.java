@@ -9,6 +9,6 @@ public class Object {
     private int speed;
 
     public Object(){
-        //construct object
+
     }
 }
