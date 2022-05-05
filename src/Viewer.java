@@ -2,6 +2,7 @@ import javax.swing.*;
 import javax.swing.JFrame;
 import java.awt.*;
 
+
 public class Viewer extends JFrame {
 
     public static void main(String[] args) {
