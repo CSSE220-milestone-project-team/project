@@ -2,16 +2,20 @@ import javax.swing.*;
 import javax.swing.JFrame;
 import java.awt.*;
 import java.awt.Color;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
 
 
 public class Viewer extends JFrame {
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         new Viewer();
     }
 
-    public Viewer(){
+    public Viewer() throws IOException {
         final String frameTitle = "Bomb Jack";
         JFrame frame = new JFrame();
         frame.setTitle(frameTitle);
@@ -27,4 +31,7 @@ public class Viewer extends JFrame {
 
 
     }
+
+    List<String> lines = Files.readAllLines(Paths.get("level.txt"));
+
 }
