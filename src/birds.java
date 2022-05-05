@@ -17,6 +17,7 @@ public class birds extends Enemy{
 
     }
     public void patrolMoveRight(int positionX, int moveSpeed){
+
         enemy.moveRight(positionX,moveSpeed);
     }
 }
