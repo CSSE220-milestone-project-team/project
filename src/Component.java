@@ -54,7 +54,6 @@ public class Component extends JComponent {
         }
         catch(IOException e){
             System.err.println("File not Found!!!");
-
         }
     }
 
