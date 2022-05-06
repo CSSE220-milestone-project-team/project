@@ -8,11 +8,11 @@ public class Enemy {
 
 
     public void moveLeft(int locX,int distance){
-        locX=locX-distance;
+        locX = locX-distance;
 
     }
     public void moveRight(int locX, int distance){
-        locX=locX+distance;
+        locX = locX+distance;
 
     }
 
