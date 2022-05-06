@@ -13,6 +13,7 @@ public class Viewer extends JFrame {
 Color lightBlue = new Color(173,216,230);
     public static void main(String[] args) throws IOException {
         new Viewer();
+
     }
 
     public Viewer() throws IOException {
