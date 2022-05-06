@@ -4,13 +4,23 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.io.IOException;
 import java.util.ArrayList;
-
+import javax.swing.*;
+import java.awt.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.InvalidPropertiesFormatException;
+import java.util.List;
+import java.io.IOException;
+import java.util.Scanner;
 public class Component extends JComponent{
 
     private ArrayList<Stage> stage;
     private Player player;
 
-    public Component(){
+    public Component() throws IOException {
 
         //construct 5 stages
         this.stage = new ArrayList<Stage>();
@@ -50,11 +60,28 @@ public class Component extends JComponent{
         for(Stage stage: this.stage){
             stage.drawOn(g2);
         }
+        Font font= new Font("UTF-8", Font.BOLD,20);
+        g.setFont(font);
+
+        g.drawString(String.valueOf(lines),0,20);
+
         try {
             this.player.drawOn(g2);
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
     }
+    List<String> lines = Files.readAllLines(Paths.get("level.txt"));
+    Scanner s1;
+    public void handleException() throws FileNotFoundException {
+        try{
+            s1= new Scanner(new File("level.txt"));
+        }
+        catch(IOException e){
+            System.err.println("File not Found!!!");
+        }
+
+    }
+
 
 }

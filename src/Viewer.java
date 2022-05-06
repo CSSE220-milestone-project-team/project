@@ -3,26 +3,27 @@ import javax.swing.JFrame;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.io.IOException;
 
 
 public class Viewer extends JFrame implements KeyListener {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         new Viewer();
     }
 
     Component component;
 
-    public Viewer(){
-        final String frameTitle = "Bomb Jack";
-        JFrame frame = new JFrame();
+    public Viewer() throws IOException {
+
+        JFrame frame = new JFrame("Bomb Jack");
         frame.setSize((new Dimension(600, 400)));
 
 
         this.component = new Component();
         frame.add(component,BorderLayout.CENTER);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+        frame.getContentPane().setBackground(new Color(173,216,230));
         frame.addKeyListener(this);
         frame.setVisible(true);
     }
