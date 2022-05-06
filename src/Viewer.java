@@ -22,8 +22,6 @@ Color lightBlue = new Color(173,216,230);
         frame.getContentPane().setBackground(lightBlue);
         frame.setSize((new Dimension(600, 400)));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        JLabel label= new JLabel("Level");
-        label.setText("Level");
 
         JComponent component = new Component();
         frame.add(component,BorderLayout.CENTER);
