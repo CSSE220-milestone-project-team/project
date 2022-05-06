@@ -5,6 +5,7 @@ import java.awt.Color;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.text.AttributedCharacterIterator;
 import java.util.List;
 
 
@@ -32,6 +33,8 @@ public class Viewer extends JFrame {
 
     }
 
-    List<String> lines = Files.readAllLines(Paths.get("level.txt"));
+
+
+
 
 }
