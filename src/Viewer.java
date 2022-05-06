@@ -10,8 +10,7 @@ import java.util.List;
 
 
 public class Viewer extends JFrame {
-
-
+Color lightBlue = new Color(173,216,230);
     public static void main(String[] args) throws IOException {
         new Viewer();
     }
@@ -20,7 +19,7 @@ public class Viewer extends JFrame {
         final String frameTitle = "Bomb Jack";
         JFrame frame = new JFrame();
         frame.setTitle(frameTitle);
-        frame.getContentPane().setBackground(Color.BLUE);
+        frame.getContentPane().setBackground(lightBlue);
         frame.setSize((new Dimension(600, 400)));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JLabel label= new JLabel("Level");
