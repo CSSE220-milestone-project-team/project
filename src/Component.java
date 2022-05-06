@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.InvalidPropertiesFormatException;
 import java.util.List;
 import java.io.IOException;
 import java.util.Scanner;
@@ -55,6 +56,7 @@ public class Component extends JComponent {
         catch(IOException e){
             System.err.println("File not Found!!!");
         }
+
     }
 
 
